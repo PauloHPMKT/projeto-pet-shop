@@ -1,0 +1,49 @@
+/*defining fonts*/
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
+
+/*mixin*/
+@mixin centerItems() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+
+    .header {
+        background-color: wheat;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 150px;
+
+        .logo {
+            @include centerItems();
+
+            img {
+                width: 100px;
+            }
+        }
+        
+        .nav-bar {
+            display: flex;
+            align-items: center;
+
+            .menu {
+                @include centerItems();
+                list-style: none;
+            }
+
+            li {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
