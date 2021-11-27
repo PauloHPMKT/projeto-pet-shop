@@ -1,6 +1,8 @@
 /*defining fonts*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
-/*mixin*/
+/*variables-settup*/
+/*mixin-flexbox*/
+/*-------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +15,7 @@ body {
 }
 
 body .header {
-  background-color: wheat;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,5 +65,53 @@ body .header .nav-bar .menu {
 
 body .header .nav-bar li {
   padding: 10px 15px;
+}
+
+body .header .nav-bar a {
+  text-decoration: none;
+  color: #ea7471;
+  font-size: 18px;
+}
+
+body .container .introduction-section {
+  padding: 0 150px;
+  height: 100vh;
+  background-color: #ea7471;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .introduction-section .introducing-content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .introduction-section .introducing-content span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body .container .introduction-section .introducing-content h1 {
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 500;
+}
+
+body .container .introduction-section .introducing-content .description {
+  font-size: 20px;
+  width: 85%;
+}
+
+body .container .introduction-section .form-booking {
+  background-color: orange;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

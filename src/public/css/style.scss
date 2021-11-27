@@ -1,13 +1,18 @@
 /*defining fonts*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 
-/*mixin*/
+/*variables-settup*/
+$set-page: 0 150px;
+$div-flex-size: 50%; 
+
+/*mixin-flexbox*/
 @mixin centerItems() {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*-------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +23,7 @@ body {
     font-family: 'Heebo', sans-serif;
 
     .header {
-        background-color: wheat;
+        background-color: #ffffff;
         display: flex;
         justify-content: space-between;
         padding: 10px 150px;
@@ -38,12 +43,54 @@ body {
             .menu {
                 @include centerItems();
                 list-style: none;
-            }
-
+            }        
             li {
                 padding: 10px 15px;
+            }    
+            a {
+                text-decoration: none;
+                color: #ea7471;
+                font-size: 18px;
             }
         }
     }
+
+    .container {
+        
+        .introduction-section {
+            padding: $set-page;
+            height: 100vh;
+            background-color: #ea7471;
+            display: flex;
+
+            .introducing-content {
+                width: $div-flex-size;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+
+                h1 {
+                    font-size: 80px;
+                    line-height: 1;
+                    font-weight: 500;
+                }
+
+                .description {
+                    font-size: 20px;
+                    width: 85%;
+                }
+            }
+            .form-booking {
+                background-color: orange;
+                width: $div-flex-size;
+            }
+        }
+    }
+    
 }
 
