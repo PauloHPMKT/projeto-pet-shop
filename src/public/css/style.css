@@ -75,9 +75,9 @@ body .header .nav-bar a {
 
 body .container .introduction-section {
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
-  background-position: bottom 5px center;
+  background-position: bottom 0 center;
   background-repeat: no-repeat;
-  background-size: 1100px;
+  background-size: 850px;
   padding: 0 150px;
   background-color: #ffb8b7;
   display: -webkit-box;
