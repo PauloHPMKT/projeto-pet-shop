@@ -63,19 +63,46 @@ body .header .nav-bar .menu {
   list-style: none;
 }
 
-body .header .nav-bar li {
+body .header .nav-bar .menu li {
   padding: 10px 15px;
 }
 
-body .header .nav-bar a {
+body .header .nav-bar .menu li a {
   text-decoration: none;
   color: #ea7471;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+body .header .nav-bar .opening-times {
+  margin-left: 160px;
+}
+
+body .header .nav-bar .opening-times h2 {
+  color: orange;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+body .header .nav-bar .opening-times h2::before {
+  content: "\f2a0";
+  font-family: 'FontAwesome';
+  font-weight: 500;
+  font-size: 30px;
+  color: blue;
+  padding-right: 10px;
+}
+
+body .header .nav-bar .opening-times h2:hover {
+  color: #353535;
+}
+
+body .header .nav-bar .opening-times span {
+  color: #353535;
 }
 
 body .container .introduction-section {
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
-  background-position: bottom 0 center;
+  background-position: bottom -10px center;
   background-repeat: no-repeat;
   background-size: 850px;
   padding: 0 150px;
@@ -195,5 +222,6 @@ body .container .introduction-section .form-booking form .form-btn {
   font-weight: bold;
   background-color: #ea7471;
   color: #ffffff;
+  cursor: p;
 }
 /*# sourceMappingURL=style.css.map */
