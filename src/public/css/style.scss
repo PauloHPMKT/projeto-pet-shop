@@ -1,5 +1,7 @@
-/*defining fonts*/
+/*-------- importing fonts --------*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
 
 /*variables-settup*/
 $set-page: 0 150px;
@@ -13,77 +15,13 @@ $padding-top-bottom: 70px 0;
     align-items: center;
 }
 
-/*-------------------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*-------- importing base styles --------*/
+@import "partials/base";
 
 body {
     font-family: 'Heebo', sans-serif;
-
-    .header {
-        background-color: #ffffff;
-        display: flex;
-        justify-content: space-between;
-        padding: 10px 150px;
-
-        .logo {
-            @include centerItems();
-
-            img {
-                width: 100px;
-            }
-        }
-        
-        .nav-bar {
-            display: flex;
-            align-items: center;
-
-            .menu {
-                @include centerItems();
-                list-style: none;
-
-                li {
-                    padding: 10px 15px;
-
-                    a {
-                        text-decoration: none;
-                        color: #ea7471;
-                        font-size: 20px;
-                    }
-                }    
-            } 
-
-            .opening-times {
-                margin-left: 160px;
-
-                h2 {
-                    color: orange;
-                    font-size: 30px;
-                    cursor: pointer;
-    
-                    &::before {
-                        content: "\f2a0";
-                        font-family: 'FontAwesome';
-                        font-weight: 500;
-                        font-size: 30px;
-                        color: blue;
-                        padding-right: 10px;
-                    }
-
-                    &:hover {
-                        color: #353535;
-                    }
-                }
-
-                span {
-                    color: #353535;
-                }
-            }    
-        }
-    }
+    /*-------- importing header styles --------*/
+    @import "partials/header";
 
     .container {
         
@@ -105,7 +43,7 @@ body {
                 span {
                     font-size: 25px;
                     font-weight: bold;
-                    margin-bottom: 20px;
+                    margin-bottom: 21px;
                     color: #ea7471;
                 }
 
@@ -135,7 +73,7 @@ body {
                         align-items: center;
                         
                         &::before {
-                            color: blue;
+                            color: #047ac9;
                             content: "\f058";
                             font-family: 'FontAwesome';
                             font-weight: 900;
@@ -145,52 +83,9 @@ body {
                     }
                 }
             }
-            .form-booking {
-                width: $div-flex-size;
-                padding: $padding-top-bottom;
-                display: flex;
-                justify-content: flex-end;
-                
-                form {
-                    background-color: #ffffff;
-                    width: 70%;
-                    padding: 40px;
-                    border-radius: 10px;
 
-                    h2 {
-                        font-size: 30px;
-                        line-height: 1;
-                    }
-                    p {
-                        color: #353535;
-                        margin: 20px 0 40px 0;
-                    }
+            @import "partials/form.scss";
 
-                    input {
-                        margin-bottom: 10px;
-                        padding-left: 13px;
-                        background-color: #cef1ff;                        
-                        width: 100%;
-                        height: 50px;
-                        border: none;
-                        border-radius: 7px;
-                        font-size: 20px;                        
-                    }
-                
-                    .form-btn {
-                        width: 100%;
-                        height: 50px;
-                        border: none;
-                        border-radius: 7px;
-                        font-size: 20px;
-                        margin: 20px 0 35px 0;
-                        font-weight: bold;
-                        background-color: #ea7471;
-                        color: #ffffff;
-                        cursor: p;
-                    }
-                }
-            }
         }
     }
 }
