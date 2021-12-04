@@ -1,12 +1,6 @@
 /*-------- importing fonts --------*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
-
-
-
-/*variables-settup*/
-$set-page: 0 150px;
-$div-flex-size: 50%; 
-$padding-top-bottom: 70px 0;
+@import 'partials/variables';
 
 /*mixin-flexbox*/
 @mixin centerItems() {
@@ -31,7 +25,7 @@ body {
             background-repeat: no-repeat;
             background-size: 850px;
             padding: $set-page; 
-            background-color: #ffb8b7;
+            background-color: $main-font-color;
             display: flex;
 
             .introducing-content {
@@ -44,7 +38,7 @@ body {
                     font-size: 25px;
                     font-weight: bold;
                     margin-bottom: 21px;
-                    color: #ea7471;
+                    color: $main-color;
                 }
 
                 h1 {
@@ -54,7 +48,7 @@ body {
                 }
 
                 .description {
-                    color: #353535;
+                    color: $comum-text-color;
                     font-size: 20px;
                     margin: 40px 0;
                     width: 85%;
@@ -65,7 +59,7 @@ body {
                     margin-top: 20px;
 
                     .extra-information {
-                        color: #353535;
+                        color: $comum-text-color;
                         font-weight: 500;
                         font-size: 20px;
                         display: flex;
@@ -83,8 +77,16 @@ body {
                     }
                 }
             }
+            .form-booking {
+                width: $div-flex-size;
+                padding: $padding-top-bottom;
+                display: flex;
+                justify-content: flex-end;
+            
+                @import "partials/form.scss";
+            
+            }
 
-            @import "partials/form.scss";
 
         }
     }
