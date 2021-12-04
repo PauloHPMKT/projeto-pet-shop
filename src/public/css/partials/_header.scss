@@ -5,7 +5,9 @@
     padding: 10px 150px;
 
     .logo {
-        @include centerItems();
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             width: 100px;
@@ -17,7 +19,9 @@
         align-items: center;
 
         .menu {
-            @include centerItems();
+            display: flex;
+            justify-content: center;
+            align-items: center;
             list-style: none;
 
             li {

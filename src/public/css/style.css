@@ -1,61 +1,56 @@
 @charset "UTF-8";
-/*-------- importing fonts --------*/
+/*-------- setup importing --------*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 /*variables-settup*/
 /*color variables*/
-/*mixin-flexbox*/
-/*-------- importing base styles --------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Heebo", sans-serif;
-  /*-------- importing header styles --------*/
-}
-body .header {
+/*-------- page structure importing --------*/
+.header {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   padding: 10px 150px;
 }
-body .header .logo {
+.header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .header .logo img {
+.header .logo img {
   width: 100px;
 }
-body .header .nav-bar {
+.header .nav-bar {
   display: flex;
   align-items: center;
 }
-body .header .nav-bar .menu {
+.header .nav-bar .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-body .header .nav-bar .menu li {
+.header .nav-bar .menu li {
   padding: 10px 15px;
 }
-body .header .nav-bar .menu li a {
+.header .nav-bar .menu li a {
   text-decoration: none;
   color: #ea7471;
   font-size: 20px;
 }
-body .header .nav-bar .opening-times {
+.header .nav-bar .opening-times {
   margin-left: 160px;
 }
-body .header .nav-bar .opening-times h2 {
+.header .nav-bar .opening-times h2 {
   color: orange;
   font-size: 30px;
   cursor: pointer;
 }
-body .header .nav-bar .opening-times h2::before {
+.header .nav-bar .opening-times h2::before {
   content: "";
   font-family: "FontAwesome";
   font-weight: 500;
@@ -63,18 +58,144 @@ body .header .nav-bar .opening-times h2::before {
   color: blue;
   padding-right: 10px;
 }
-body .header .nav-bar .opening-times h2:hover {
+.header .nav-bar .opening-times h2:hover {
   color: #353535;
   transition: 300ms all;
 }
-body .header .nav-bar .opening-times span {
+.header .nav-bar .opening-times span {
   color: #353535;
+}
+
+.wrapper {
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 70%;
+  padding: 0 40px 40px;
+  border-radius: 10px;
+}
+.wrapper .slide-controls {
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.wrapper .slide-controls .slide {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.wrapper .slide-controls label.cat {
+  color: #000;
+}
+.wrapper .slide-controls input[type=radio] {
+  display: none;
+}
+.wrapper .slide-controls .slider-tab {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(left, #047ac9, #149edb);
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .slide-controls #cat:checked ~ .slider-tab {
+  left: 50%;
+}
+.wrapper .slide-controls #cat:checked ~ label.cat {
+  color: #ffffff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.wrapper .slide-controls #cat:checked ~ label.dog {
+  color: #000;
+}
+.wrapper .slide-controls #dog:checked ~ label.cat {
+  color: #000;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+p {
+  color: #353535;
+  margin: 20px 0 40px 0;
+}
+
+.form-container {
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner {
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form {
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-container .form-inner form input {
+  margin-bottom: 10px;
+  padding-left: 13px;
+  background-color: #cef1ff;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  font-size: 20px;
+}
+.form-container .form-inner form input:focus {
+  border-color: #ffb8b7;
+  transition: all 400ms;
+}
+
+.form-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 7px;
+  font-size: 20px;
+  margin: 20px 0 35px 0;
+  font-weight: bold;
+  background-color: #ea7471;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+/*-------- importing base styles --------*/
+body {
+  font-family: "Heebo", sans-serif;
+  /*-------- importing header styles --------*/
 }
 body .container .introduction-section {
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
   background-position: bottom -10px center;
   background-repeat: no-repeat;
-  background-size: 850px;
+  background-size: 950px;
   padding: 0 150px;
   background-color: #ffb8b7;
   display: flex;
@@ -113,6 +234,7 @@ body .container .introduction-section .introducing-content .extra-info-box .extr
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 }
 body .container .introduction-section .introducing-content .extra-info-box .extra-information::before {
   color: #047ac9;
@@ -127,114 +249,4 @@ body .container .introduction-section .form-booking {
   padding: 70px 0;
   display: flex;
   justify-content: flex-end;
-}
-body .container .introduction-section .form-booking .wrapper {
-  overflow: hidden;
-  background-color: #ffffff;
-  width: 70%;
-  padding: 0 40px 40px;
-  border-radius: 10px;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls {
-  position: relative;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
-  margin: 30px 0;
-  justify-content: space-between;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls .slide {
-  height: 100%;
-  width: 100%;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 48px;
-  cursor: pointer;
-  z-index: 1;
-  transition: all 0.6s ease;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls label.cat {
-  color: #000;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls input[type=radio] {
-  display: none;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls .slider-tab {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  left: 0;
-  z-index: 0;
-  border-radius: 5px;
-  background: -webkit-linear-gradient(left, #047ac9, #149edb);
-  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls #cat:checked ~ .slider-tab {
-  left: 50%;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls #cat:checked ~ label.cat {
-  color: #ffffff;
-  cursor: default;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls #cat:checked ~ label.dog {
-  color: #000;
-}
-body .container .introduction-section .form-booking .wrapper .slide-controls #dog:checked ~ label.cat {
-  color: #000;
-}
-body .container .introduction-section .form-booking h2 {
-  font-size: 30px;
-  line-height: 1;
-}
-body .container .introduction-section .form-booking p {
-  color: #353535;
-  margin: 20px 0 40px 0;
-}
-body .container .introduction-section .form-booking .form-container {
-  width: 100%;
-  overflow: hidden;
-}
-body .container .introduction-section .form-booking .form-container .form-inner {
-  display: flex;
-  width: 200%;
-}
-body .container .introduction-section .form-booking .form-container .form-inner form {
-  width: 50%;
-  transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-body .container .introduction-section .form-booking .form-container .form-inner form input {
-  margin-bottom: 10px;
-  padding-left: 13px;
-  background-color: #cef1ff;
-  width: 100%;
-  height: 50px;
-  outline: none;
-  border: 2px solid transparent;
-  border-radius: 7px;
-  font-size: 20px;
-}
-body .container .introduction-section .form-booking .form-container .form-inner form input:focus {
-  border-color: #ffb8b7;
-  transition: all 400ms;
-}
-body .container .introduction-section .form-booking .form-btn {
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 7px;
-  font-size: 20px;
-  margin: 20px 0 35px 0;
-  font-weight: bold;
-  background-color: #ea7471;
-  color: #ffffff;
-  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
