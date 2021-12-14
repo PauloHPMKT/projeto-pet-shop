@@ -9,12 +9,8 @@
 @import "partials/footer";
 
 
-/*-------- importing base styles --------*/
-
 body {
-    font-family: 'Heebo', sans-serif;
-    /*-------- importing header styles --------*/
-    
+    font-family: 'Heebo', sans-serif;    
 
     .container {
         
@@ -89,6 +85,12 @@ body {
 
 
         }
+    }
+
+
+    .about-container {
+        background-color: $main-font-color;
+        display: flex;
     }
 
     
