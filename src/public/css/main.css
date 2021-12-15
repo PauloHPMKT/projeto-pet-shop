@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*-------- setup importing --------*/
+/*-------- base setup importing --------*/
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 /*variables-settup*/
 /*color variables*/
@@ -7,6 +7,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
 }
 
 /*-------- page structure importing --------*/
@@ -64,6 +68,11 @@
 }
 .header .nav-bar .opening-times span {
   color: #353535;
+}
+
+.container {
+  padding: 0 150px;
+  background-color: #ffb8b7;
 }
 
 .wrapper {
@@ -249,46 +258,44 @@ p {
   border: none;
 }
 
-body {
-  font-family: "Heebo", sans-serif;
-}
-body .container .introduction-section {
+/*-------- home page importing --------*/
+.introduction-section {
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
   background-position: bottom -10px center;
   background-repeat: no-repeat;
   background-size: 950px;
-  padding: 0 150px;
-  background-color: #ffb8b7;
   display: flex;
 }
-body .container .introduction-section .introducing-content {
-  width: 50%;
+.introduction-section .introducing-content {
   display: flex;
   flex-direction: column;
   padding: 70px 0;
 }
-body .container .introduction-section .introducing-content span {
+.introduction-section .introducing-content.flex-dimension {
+  width: 50%;
+}
+.introduction-section .introducing-content span {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 21px;
   color: #ea7471;
 }
-body .container .introduction-section .introducing-content h1 {
+.introduction-section .introducing-content h1 {
   font-size: 80px;
   line-height: 1;
   font-weight: 500;
 }
-body .container .introduction-section .introducing-content .description {
+.introduction-section .introducing-content .description {
   color: #353535;
   font-size: 20px;
   margin: 40px 0;
   width: 85%;
 }
-body .container .introduction-section .introducing-content .extra-info-box {
+.introduction-section .introducing-content .extra-info-box {
   width: 50%;
   margin-top: 20px;
 }
-body .container .introduction-section .introducing-content .extra-info-box .extra-information {
+.introduction-section .introducing-content .extra-info-box .extra-information {
   color: #353535;
   font-weight: 500;
   font-size: 20px;
@@ -297,7 +304,7 @@ body .container .introduction-section .introducing-content .extra-info-box .extr
   align-items: center;
   margin: 0px;
 }
-body .container .introduction-section .introducing-content .extra-info-box .extra-information::before {
+.introduction-section .introducing-content .extra-info-box .extra-information::before {
   color: #047ac9;
   content: "";
   font-family: "FontAwesome";
@@ -305,13 +312,20 @@ body .container .introduction-section .introducing-content .extra-info-box .extr
   font-size: 70px;
   padding-right: 14px;
 }
-body .container .introduction-section .form-booking {
-  width: 50%;
+.introduction-section .form-booking {
   padding: 70px 0;
   display: flex;
   justify-content: flex-end;
 }
-body .about-container {
+.introduction-section .form-booking.flex-dimension {
+  width: 50%;
+}
+
+.about-container {
   background-color: #ffb8b7;
   display: flex;
-}/*# sourceMappingURL=style.css.map */
+  padding: 80px 0;
+}
+.about-container .flex-dimension {
+  width: 50%;
+}/*# sourceMappingURL=main.css.map */
