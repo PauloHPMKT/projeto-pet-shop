@@ -1,5 +1,21 @@
+/*---------------align items setup---------------*/
 @mixin alignFlex($flex, $justify, $alignItems) {
     display: $flex;
     justify-content: $justify;
     align-items: $alignItems;
+}
+
+/*---------------subtitle setup---------------*/
+@mixin subTittle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 21px;
+    color: $main-color;
+}
+
+/*---------------comum text setup---------------*/
+@mixin comumText {
+    color: $comum-text-color;
+    font-weight: 500;
+    font-size: 20px;
 }

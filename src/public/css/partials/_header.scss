@@ -23,7 +23,11 @@
                 a {
                     text-decoration: none;
                     color: #ea7471;
-                    font-size: 20px;    
+                    font-size: 20px;   
+                    
+                    &:hover {
+                        color: $check-color;
+                    }
                 }
             }    
         } 

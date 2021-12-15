@@ -13,10 +13,7 @@
             width: $div-flex-size;
         }
         span {
-            font-size: 25px;
-            font-weight: bold;
-            margin-bottom: 21px;
-            color: $main-color;
+            @include subTittle;
         }
         h1 {
             font-size: 80px;
@@ -33,9 +30,7 @@
             width: 50%;
             margin-top: 20px;
             .extra-information {
-                color: $comum-text-color;
-                font-weight: 500;
-                font-size: 20px;
+                @include comumText;
                 @include alignFlex(flex, center, center);
                 margin: 0px;
                 
