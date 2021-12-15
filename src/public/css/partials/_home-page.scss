@@ -1,0 +1,62 @@
+.introduction-section {
+    background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
+    background-position:bottom -10px center;
+    background-repeat: no-repeat;
+    background-size: 950px;
+    display: flex;
+    .introducing-content {
+        display: flex;
+        flex-direction: column;
+        padding: $padding-top-bottom;
+        
+        &.flex-dimension {
+            width: $div-flex-size;
+        }
+        span {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 21px;
+            color: $main-color;
+        }
+        h1 {
+            font-size: 80px;
+            line-height: 1;
+            font-weight: 500;
+        }
+        .description {
+            color: $comum-text-color;
+            font-size: 20px;
+            margin: 40px 0;
+            width: 85%;
+        }
+        .extra-info-box {
+            width: 50%;
+            margin-top: 20px;
+            .extra-information {
+                color: $comum-text-color;
+                font-weight: 500;
+                font-size: 20px;
+                @include alignFlex(flex, center, center);
+                margin: 0px;
+                
+                &::before {
+                    color: #047ac9;
+                    content: "\f058";
+                    font-family: 'FontAwesome';
+                    font-weight: 900;
+                    font-size: 70px;
+                    padding-right: 14px;
+                }
+            }
+        }
+    }
+    .form-booking {
+        padding: $padding-top-bottom;
+        display: flex;
+        justify-content: flex-end;
+
+        &.flex-dimension {
+            width: $div-flex-size;
+        }
+    }
+}
