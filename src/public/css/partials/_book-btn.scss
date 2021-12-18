@@ -1,0 +1,25 @@
+.book-now {
+    padding: 15px 40px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    color: $base-white-color;
+    background-color: $check-color;
+    cursor: pointer;
+
+    &::before {
+        color: $base-white-color;
+        content: "\f1b0";
+        font-family: 'FontAwesome';
+        font-weight: 900;
+        font-size: 20px;
+        padding-right: 14px;
+    }
+
+    &:hover {
+        background-color: $main-color;
+        transition: $transition-mood;
+    }
+}
