@@ -28,6 +28,12 @@ app.get('/sobre', (req, res) => {
     })
 })
 
+app.get('/services', (req, res) => {
+    res.render('services', {
+        title: 'Services - PetShop',
+    })
+})
+
 //open server
 const port = process.env.port || 8085
 app.listen(port, () => console.log(`Server is running at port ${port}`))
