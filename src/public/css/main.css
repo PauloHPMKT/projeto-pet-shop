@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 /*variables-settup*/
 /*color variables*/
+/*transitions*/
 * {
   margin: 0;
   padding: 0;
@@ -195,6 +196,10 @@ p {
   color: #ffffff;
   cursor: pointer;
 }
+.form-btn:hover {
+  background-color: #047ac9;
+  transition: all 350ms ease;
+}
 
 .footer {
   padding: 100px 150px;
@@ -249,7 +254,7 @@ p {
 }
 .footer .footer-content .location .opening-times h2:hover {
   color: #353535;
-  transition: 300ms all;
+  transition: all 350ms ease;
 }
 .footer .width-structure {
   width: 40%;
@@ -262,6 +267,31 @@ p {
   padding-left: 10px;
   border-radius: 5px;
   border: none;
+}
+
+/*-------- components importing --------*/
+.book-now {
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #047ac9;
+  cursor: pointer;
+}
+.book-now::before {
+  color: #ffffff;
+  content: "";
+  font-family: "FontAwesome";
+  font-weight: 900;
+  font-size: 20px;
+  padding-right: 14px;
+}
+.book-now:hover {
+  background-color: #ea7471;
+  transition: all 350ms ease;
 }
 
 /*-------- home page importing --------*/
@@ -354,22 +384,24 @@ p {
   font-weight: 500;
   font-size: 20px;
 }
-.about-container .flex-dimension.about-description #teste {
+.about-container .flex-dimension.about-description .teste {
+  width: 100%;
+  height: 100%;
   background: #ffffff80;
-  position: absolute;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  left: -100%;
-  width: 100%;
-  height: 120%;
   transition: all 600ms ease;
 }
-.about-container .flex-dimension.about-description #teste .wrapper {
-  width: 35%;
+.about-container .flex-dimension.about-description .teste .wrapper {
+  width: 27%;
   box-shadow: 2px 2px 5px gray;
 }
-.about-container .flex-dimension.about-description #teste.visible {
+.about-container .flex-dimension.about-description .teste.visible {
   top: 0;
   left: 0;
 }/*# sourceMappingURL=main.css.map */

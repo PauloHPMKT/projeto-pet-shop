@@ -1,5 +1,4 @@
 
-    
 .wrapper {
     overflow: hidden;
     background-color: $base-white-color;
@@ -123,7 +122,12 @@ p {
     font-size: 20px;
     margin: 20px 0 35px 0;
     font-weight: bold;
-    background-color: #ea7471;
+    background-color: $main-color;
     color: $base-white-color;
     cursor: pointer;
+
+    &:hover {
+        background-color: $check-color;
+        transition: $transition-mood;
+    }
 }
