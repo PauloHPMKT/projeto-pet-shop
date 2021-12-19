@@ -21,6 +21,36 @@
 
 
 
+.positive-points {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .extra-info-box {
+        width: 50%;
+        .extra-information {
+            @include alignFlex(flex, center, center);
+            
+            &::before {
+                color: #047ac9;
+                content: "\f058";
+                font-family: 'FontAwesome';
+                font-weight: 900;
+                font-size: 70px;
+                padding-right: 14px;
+            }
+        }    
+    }    
+}
+
+.service-list {
+    background-image: url("/assents/white-background.png");
+}
+
+
+
+
+
 
     
 
