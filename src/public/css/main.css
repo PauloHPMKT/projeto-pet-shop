@@ -413,6 +413,7 @@ p {
 }
 .positive-points .extra-info-box {
   width: 50%;
+  padding-right: 10px;
 }
 .positive-points .extra-info-box .extra-information {
   display: flex;
@@ -429,5 +430,65 @@ p {
 }
 
 .service-list {
-  background-image: url("/assents/white-background.png");
+  text-align: center;
+  padding: 80px 0;
+}
+.service-list .description-elements {
+  padding: 0 270px;
+}
+.service-list .description-elements span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  color: #ea7471;
+}
+.service-list .description-elements h2 {
+  font-size: 45px;
+  line-height: 1;
+  margin: 40px 0 30px 0;
+}
+.service-list .description-elements .description {
+  color: #353535;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.service-list-items {
+  display: flex;
+  list-style: none;
+}
+.service-list-items .list-services-description {
+  background-color: #ffffff;
+  background-image: url("/assents/union-svg-pic.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 250px;
+  margin: 0 20px;
+  text-align: start;
+  padding: 40px;
+  width: 33.3%;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+.service-list-items .list-services-description:hover {
+  border: none;
+  box-shadow: 0 0 25px #ea7471;
+  transition: all 350ms ease;
+}
+.service-list-items .list-services-description h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1;
+}
+.service-list-items .list-services-description span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  color: #ea7471;
+}
+.service-list-items .list-services-description .service-description {
+  margin: 30px 0;
+}
+.service-list-items .list-services-description .service-description li {
+  margin: 10px 0;
 }/*# sourceMappingURL=main.css.map */
