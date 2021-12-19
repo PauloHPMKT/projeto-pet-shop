@@ -5,6 +5,46 @@
 
 <body>
     <%- include('partials/header.ejs')%>
+    <main class="container">
+        <section class="section-content">
+            <div class="flex-dimension">
+                <img src="/assents/pet-care-img.png" alt="Take care of your pets">
+            </div>
+            <article class="flex-dimension about-description">
+                <span>Why pets parents love our services?</span>
+                <h1>Take care of your pet's needs, all in one place.</h1>
+                <p class="extra-information">
+                    We also work to build relationships with local veterinarians. Because we often see dogs more than their vets do we are in excellent position to notice changes.
+                </p>
+                <div class="positive-points">
+                    <!--ver a possibilidade de usar um forEach()-->
+                    <div class="extra-info-box"> 
+                        <p class="extra-information">
+                            Personalized service with free consultations
+                        </p>
+                    </div>
+                    <div class="extra-info-box"> 
+                        <p class="extra-information">
+                            100% satisfaction guarantee
+                        </p>
+                    </div>
+                    <div class="extra-info-box"> 
+                        <p class="extra-information">
+                            100% satisfaction guarantee
+                        </p>
+                    </div>
+                    <div class="extra-info-box"> 
+                        <p class="extra-information">
+                            100% satisfaction guarantee
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="service-list">
+            aqui vão os serviços...
+        </section>
+    </main>
 
     <%- include('partials/footer.ejs')%>
 </body>
