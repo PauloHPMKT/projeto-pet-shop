@@ -34,6 +34,12 @@ app.get('/services', (req, res) => {
     })
 })
 
+app.get('/gallery', (req, res) => {
+    res.render('gallery', {
+        title: 'Gallery - PetShop',
+    })
+})
+
 //open server
 const port = process.env.port || 8085
 app.listen(port, () => console.log(`Server is running at port ${port}`))
