@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <%- include('partials/head.ejs') %>
+  <%- include('partials/head.ejs') %>
 
-    <body>
-        <%- include('partials/header.ejs') %>
-        <main class="container">
-            <section class="introduction-section">
-                <div class="introducing-content flex-dimension">
-                    <span>Grooming salon</span>
-                    <h1>Professional Pets Grooming</h1>
-                    <div class="description">
-                        For 25 years we have been committed to providing your beloved pet the caring and knowledgeable grooming.
-                    </div>
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            Personalized service with free consultations
-                        </p>
-                    </div>
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            100% satisfaction guarantee
-                        </p>
-                    </div>
-                </div>
-                <div class="form-booking flex-dimension">   
-                    <%- include('partials/form.ejs') %>
-                </div>
-            </section>
-        </main>
-        <%- include('partials/footer.ejs') %>
+  <body>
+    <%- include('partials/header.ejs') %>
+    <main>
+      <section class="introduction">
+        <div class="introduction-content">
+          <span>Grooming salon</span>
+          <h1>Professional Pets Grooming</h1>
+          <div class="description">
+            <p>
+              For 25 years we have been committed to   providing your beloved pet the caring and knowledgeable grooming.
+            </p>
+          </div>
+          <div class="extra-info-box"> 
+            <p class="extra-information">
+              Personalized service with free consultations
+            </p>
+          </div>
+          <div class="extra-info-box"> 
+            <p class="extra-information">
+              100% satisfaction guarantee
+            </p>
+          </div>
+        </div>
+        <div class="introduction--form-booking">   
+          <%- include('partials/form.ejs') %>
+        </div>
+      </section>
+    </main>
+    <%- include('partials/footer.ejs') %>
 
-        <%- include('partials/foot.ejs') %>
-    </body>
+    <%- include('partials/foot.ejs') %>
+  </body>
 </html>

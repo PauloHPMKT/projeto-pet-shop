@@ -1,17 +1,32 @@
-@charset "UTF-8";
 /*-------- base setup importing --------*/
-@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 /*variables-settup*/
 /*color variables*/
 /*transitions*/
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
   font-family: "Heebo", sans-serif;
+  background-color: #ffb8b7;
+}
+
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*---------------align items setup---------------*/
@@ -62,7 +77,7 @@ body {
   cursor: pointer;
 }
 .header .nav-bar .opening-times h2::before {
-  content: "";
+  content: "\f2a0";
   font-family: "FontAwesome";
   font-weight: 500;
   font-size: 30px;
@@ -75,11 +90,6 @@ body {
 }
 .header .nav-bar .opening-times span {
   color: #353535;
-}
-
-.container {
-  padding: 0 150px;
-  background-color: #ffb8b7;
 }
 
 .wrapper {
@@ -202,6 +212,7 @@ p {
 }
 
 .footer {
+  background-color: #fff;
   padding: 100px 150px;
   display: flex;
   justify-content: space-between;
@@ -245,7 +256,7 @@ p {
   cursor: pointer;
 }
 .footer .footer-content .location .opening-times h2::before {
-  content: "";
+  content: "\f2a0";
   font-family: "FontAwesome";
   font-weight: 500;
   font-size: 30px;
@@ -283,7 +294,7 @@ p {
 }
 .book-now::before {
   color: #ffffff;
-  content: "";
+  content: "\f1b0";
   font-family: "FontAwesome";
   font-weight: 900;
   font-size: 20px;
@@ -295,43 +306,45 @@ p {
 }
 
 /*-------- home page importing --------*/
-.introduction-section {
+.introduction {
+  display: flex;
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
   background-position: bottom -10px center;
   background-repeat: no-repeat;
   background-size: 950px;
-  display: flex;
 }
-.introduction-section .introducing-content {
+.introduction-content {
   display: flex;
   flex-direction: column;
+  width: 50%;
   padding: 70px 0;
 }
-.introduction-section .introducing-content.flex-dimension {
-  width: 50%;
-}
-.introduction-section .introducing-content span {
+.introduction-content span {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 21px;
   color: #ea7471;
 }
-.introduction-section .introducing-content h1 {
+.introduction-content h1 {
   font-size: 80px;
   line-height: 1;
   font-weight: 500;
 }
-.introduction-section .introducing-content .description {
+.introduction-content .description {
+  margin: 40px 0;
+  width: 100%;
+}
+.introduction-content .description p {
   color: #353535;
   font-size: 20px;
-  margin: 40px 0;
+  margin: 0;
   width: 85%;
 }
-.introduction-section .introducing-content .extra-info-box {
+.introduction-content .extra-info-box {
   width: 50%;
   margin-top: 20px;
 }
-.introduction-section .introducing-content .extra-info-box .extra-information {
+.introduction-content .extra-info-box .extra-information {
   color: #353535;
   font-weight: 500;
   font-size: 20px;
@@ -340,21 +353,19 @@ p {
   align-items: center;
   margin: 0px;
 }
-.introduction-section .introducing-content .extra-info-box .extra-information::before {
+.introduction-content .extra-info-box .extra-information::before {
   color: #047ac9;
-  content: "";
+  content: "\f058";
   font-family: "FontAwesome";
   font-weight: 900;
   font-size: 70px;
   padding-right: 14px;
 }
-.introduction-section .form-booking {
+.introduction--form-booking {
+  width: 50%;
   padding: 70px 0;
   display: flex;
   justify-content: flex-end;
-}
-.introduction-section .form-booking.flex-dimension {
-  width: 50%;
 }
 
 .section-content {
@@ -422,7 +433,7 @@ p {
 }
 .positive-points .extra-info-box .extra-information::before {
   color: #047ac9;
-  content: "";
+  content: "\f058";
   font-family: "FontAwesome";
   font-weight: 900;
   font-size: 70px;

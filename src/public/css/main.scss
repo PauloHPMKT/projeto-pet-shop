@@ -1,12 +1,10 @@
 /*-------- base setup importing --------*/
-@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap);
 @import 'partials/variables';
 @import "partials/base";
 @import "partials/mixins/mixin-flex";
 
 /*-------- page structure importing --------*/
 @import "partials/header";
-@import "partials/structure";
 @import "partials/form";
 @import "partials/footer";
 

@@ -1,57 +1,60 @@
-.introduction-section {
-    background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
-    background-position:bottom -10px center;
-    background-repeat: no-repeat;
-    background-size: 950px;
-    display: flex;
-    .introducing-content {
-        display: flex;
-        flex-direction: column;
-        padding: $padding-top-bottom;
-        
-        &.flex-dimension {
-            width: $div-flex-size;
-        }
-        span {
-            @include subTittle;
-        }
-        h1 {
-            font-size: 80px;
-            line-height: 1;
-            font-weight: 500;
-        }
-        .description {
-            color: $comum-text-color;
-            font-size: 20px;
-            margin: 40px 0;
-            width: 85%;
-        }
-        .extra-info-box {
-            width: 50%;
-            margin-top: 20px;
-            .extra-information {
-                @include comumText;
-                @include alignFlex(flex, center, center);
-                margin: 0px;
-                
-                &::before {
-                    color: #047ac9;
-                    content: "\f058";
-                    font-family: 'FontAwesome';
-                    font-weight: 900;
-                    font-size: 70px;
-                    padding-right: 14px;
-                }
-            }
-        }
-    }
-    .form-booking {
-        padding: $padding-top-bottom;
-        display: flex;
-        justify-content: flex-end;
+.introduction {
+  display: flex;
+  background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
+  background-position:bottom -10px center;
+  background-repeat: no-repeat;
+  background-size: 950px;
 
-        &.flex-dimension {
-            width: $div-flex-size;
-        }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    width: $div-flex-size;
+    padding: $padding-top-bottom;
+    
+    span {
+      @include subTittle;
     }
+
+    h1 {
+      font-size: 80px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .description {
+      margin: 40px 0;
+      width: 100%;
+      
+      p {
+        color: $comum-text-color;
+        font-size: 20px;
+        margin: 0;
+        width: 85%;
+      }
+    }
+    .extra-info-box {
+      width: 50%;
+      margin-top: 20px;
+      .extra-information {
+        @include comumText;
+        @include alignFlex(flex, center, center);
+        margin: 0px;
+        
+        &::before {
+          color: #047ac9;
+          content: "\f058";
+          font-family: 'FontAwesome';
+          font-weight: 900;
+          font-size: 70px;
+          padding-right: 14px;
+        }
+      }
+    }
+  }
+  &--form-booking {
+    width: $div-flex-size;
+    padding: $padding-top-bottom;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
