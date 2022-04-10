@@ -1,5 +1,8 @@
 const express = require('express')
 const path = require('path')
+
+const routes = require('./routes')
+
 const app = express()
 
 //defining template engine
@@ -15,30 +18,15 @@ app.use(express.static(path.join(__dirname, 'public')))
 //habiliting server to receive form data
 app.use(express.urlencoded({ extended: true }))
 
+
 //defining routs
-app.get('/', (req, res) => {
-    res.render('index', {
-        title: 'Home - PetsShop',
-    })
+app.use('/', routes)
+
+//error page not found 404
+app.use((req, res) => {
+    res.send('Page not found')
 })
 
-app.get('/sobre', (req, res) => {
-    res.render('sobre', {
-        title: 'Sobre - PetShop',
-    })
-})
-
-app.get('/services', (req, res) => {
-    res.render('services', {
-        title: 'Services - PetShop',
-    })
-})
-
-app.get('/gallery', (req, res) => {
-    res.render('gallery', {
-        title: 'Gallery - PetShop',
-    })
-})
 
 //open server
 const port = process.env.port || 8085
