@@ -3,15 +3,13 @@
 @import "partials/base";
 @import "partials/mixins/mixin-flex";
 
-/*-------- page structure importing --------*/
+/*-------- page structure components --------*/
 @import "partials/header";
 @import "partials/form";
 @import "partials/footer";
-
-/*-------- components importing --------*/
 @import "partials/book-btn";
 
-/*-------- home page importing --------*/
+/*-------- page importing --------*/
 @import "partials/home-page";
 @import "partials/about-page";
 @import "partials/services";
