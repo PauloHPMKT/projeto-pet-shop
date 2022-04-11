@@ -1,5 +1,5 @@
 /*-------- base setup importing --------*/
-@import 'partials/variables';
+@import "partials/variables";
 @import "partials/base";
 @import "partials/mixins/mixin-flex";
 
@@ -13,6 +13,7 @@
 @import "partials/home-page";
 @import "partials/about-page";
 @import "partials/services";
+@import "partials/contact";
 
 
 
@@ -25,7 +26,7 @@
     text-align: center;
     padding-top: 100px;
     span {
-        @include subTittle;
+        @include subTitle;
     }  
     
     h2 {

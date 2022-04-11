@@ -32,7 +32,7 @@ a {
 /*---------------align items setup---------------*/
 /*---------------subtitle setup---------------*/
 /*---------------comum text setup---------------*/
-/*-------- page structure importing --------*/
+/*-------- page structure components --------*/
 .header {
   background-color: #ffffff;
   display: flex;
@@ -95,7 +95,7 @@ a {
 .wrapper {
   overflow: hidden;
   background-color: #ffffff;
-  width: 70%;
+  width: 500px;
   padding: 0 40px 40px;
   border-radius: 10px;
 }
@@ -234,7 +234,7 @@ p {
   color: #ea7471;
 }
 .footer .footer-content {
-  padding-right: 80px;
+  padding-right: 60px;
 }
 .footer .footer-content .logo-footer img {
   width: 200px;
@@ -280,7 +280,6 @@ p {
   border: none;
 }
 
-/*-------- components importing --------*/
 .book-now {
   padding: 15px 40px;
   border-radius: 10px;
@@ -290,6 +289,7 @@ p {
   font-size: 17px;
   color: #ffffff;
   background-color: #047ac9;
+  transition: all 350ms ease;
   cursor: pointer;
 }
 .book-now::before {
@@ -302,22 +302,21 @@ p {
 }
 .book-now:hover {
   background-color: #ea7471;
-  transition: all 350ms ease;
 }
 
-/*-------- home page importing --------*/
+/*-------- page importing --------*/
 .introduction {
   display: flex;
   background-image: url("/assents/dog-e-cat-bg-removebg-preview.png");
   background-position: bottom -10px center;
   background-repeat: no-repeat;
   background-size: 950px;
+  padding: 70px 0;
 }
 .introduction-content {
   display: flex;
   flex-direction: column;
   width: 50%;
-  padding: 70px 0;
 }
 .introduction-content span {
   font-size: 25px;
@@ -349,7 +348,7 @@ p {
   font-weight: 500;
   font-size: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   margin: 0px;
 }
@@ -363,42 +362,40 @@ p {
 }
 .introduction--form-booking {
   width: 50%;
-  padding: 70px 0;
   display: flex;
   justify-content: flex-end;
 }
 
-.section-content {
-  background-color: #ffb8b7;
+.about {
   display: flex;
   padding: 70px 0;
 }
-.section-content .flex-dimension {
+.about-dimension {
   width: 50%;
 }
-.section-content .flex-dimension img {
+.about-dimension img {
   border-radius: 10px;
 }
-.section-content .flex-dimension.about-description span {
+.about-dimension.about-description span {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 21px;
   color: #ea7471;
 }
-.section-content .flex-dimension.about-description h1 {
+.about-dimension.about-description h2 {
   font-size: 50px;
   line-height: 1;
   margin: 40px 0 30px 0;
 }
-.section-content .flex-dimension.about-description .extra-information {
+.about-dimension.about-description p {
   color: #353535;
   font-weight: 500;
   font-size: 20px;
 }
-.section-content .flex-dimension.about-description .teste {
+.about-dimension.about-description .book-form {
   width: 100%;
   height: 100%;
-  background: #ffffff80;
+  background: rgba(255, 255, 255, 0.502);
   position: fixed;
   z-index: 1;
   top: 0;
@@ -408,30 +405,56 @@ p {
   align-items: center;
   transition: all 600ms ease;
 }
-.section-content .flex-dimension.about-description .teste .wrapper {
-  width: 27%;
+.about-dimension.about-description .book-form .wrapper {
   box-shadow: 2px 2px 5px gray;
 }
-.section-content .flex-dimension.about-description .teste.visible {
+.about-dimension.about-description .book-form.visible {
   top: 0;
   left: 0;
 }
 
-.positive-points {
+.services {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  padding: 70px 0;
+}
+.services-dimension {
+  width: 50%;
+}
+.services-dimension span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  color: #ea7471;
+}
+.services-dimension h2 {
+  font-size: 45px;
+  line-height: 1;
+  margin: 40px 0 30px 0;
+}
+.services-dimension p {
+  color: #353535;
+  font-size: 20px;
+}
+.services--positive-points {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-.positive-points .extra-info-box {
+.services--positive-points .extra-info-box {
   width: 50%;
   padding-right: 10px;
 }
-.positive-points .extra-info-box .extra-information {
+.services--positive-points .extra-info-box .extra-information {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #353535;
+  font-weight: 500;
+  font-size: 20px;
 }
-.positive-points .extra-info-box .extra-information::before {
+.services--positive-points .extra-info-box .extra-information::before {
   color: #047ac9;
   content: "\f058";
   font-family: "FontAwesome";
@@ -452,11 +475,6 @@ p {
   font-weight: bold;
   margin-bottom: 21px;
   color: #ea7471;
-}
-.service-list .description-elements h2 {
-  font-size: 45px;
-  line-height: 1;
-  margin: 40px 0 30px 0;
 }
 .service-list .description-elements .description {
   color: #353535;
@@ -502,6 +520,16 @@ p {
 }
 .service-list-items .list-services-description .service-description li {
   margin: 10px 0;
+}
+
+.contacts {
+  padding: 70px 0;
+}
+.contacts span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 21px;
+  color: #ea7471;
 }
 
 .gallery-content {

@@ -1,0 +1,8 @@
+.contacts {
+    padding: $padding-top-bottom;
+    
+    span {
+        @include subTitle;
+    }
+}
+

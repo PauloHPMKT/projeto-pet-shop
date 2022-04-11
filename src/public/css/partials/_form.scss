@@ -2,7 +2,7 @@
 .wrapper {
     overflow: hidden;
     background-color: $base-white-color;
-    width: 70%;
+    width: 500px;
     padding: 0 40px 40px;
     border-radius: 10px;
 
@@ -103,7 +103,7 @@ p {
                 font-size: 20px;  
                 
                 &:focus {
-                    border-color: $main-font-color;
+                    border-color: $main-bg-color;
                     transition:all 400ms;
                 }
             }

@@ -4,15 +4,15 @@
   background-position:bottom -10px center;
   background-repeat: no-repeat;
   background-size: 950px;
+  padding: $padding-top-bottom;
 
   &-content {
     display: flex;
     flex-direction: column;
     width: $div-flex-size;
-    padding: $padding-top-bottom;
     
     span {
-      @include subTittle;
+      @include subTitle;
     }
 
     h1 {
@@ -26,18 +26,19 @@
       width: 100%;
       
       p {
-        color: $comum-text-color;
-        font-size: 20px;
+        @include text-default;
         margin: 0;
         width: 85%;
       }
     }
+
     .extra-info-box {
       width: 50%;
       margin-top: 20px;
+
       .extra-information {
         @include comumText;
-        @include alignFlex(flex, center, center);
+        @include alignFlex(flex, start, center);
         margin: 0px;
         
         &::before {
@@ -51,9 +52,9 @@
       }
     }
   }
+
   &--form-booking {
     width: $div-flex-size;
-    padding: $padding-top-bottom;
     display: flex;
     justify-content: flex-end;
   }

@@ -6,7 +6,7 @@
 }
 
 /*---------------subtitle setup---------------*/
-@mixin subTittle {
+@mixin subTitle {
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 21px;
@@ -17,5 +17,10 @@
 @mixin comumText {
     color: $comum-text-color;
     font-weight: 500;
+    font-size: 20px;
+}
+
+@mixin text-default {
+    color: $comum-text-color;
     font-size: 20px;
 }
