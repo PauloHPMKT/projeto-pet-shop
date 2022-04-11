@@ -1,9 +1,9 @@
-const btnteste = document.querySelector('#testebtn')
-const divTeste = document.querySelector('.teste')
+const btnBook = document.querySelector('#btn-book')
+const form = document.querySelector('.book-form')
 
 
 function callForm() {
-   divTeste.classList.add('visible')  
+   form.classList.add('visible')  
 }
 
 function removeForm(e) {
@@ -11,8 +11,8 @@ function removeForm(e) {
    containerForm.classList.remove('visible')
 }
 
-btnteste.addEventListener('click', callForm)
-divTeste.addEventListener('click', removeForm)
+btnBook.addEventListener('click', callForm)
+form.addEventListener('click', removeForm)
 
 
 
