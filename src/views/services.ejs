@@ -1,160 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include('partials/head.ejs') %>
+  <%- include('partials/head.ejs') %>
 
-<body>
+  <body>
     <%- include('partials/header.ejs')%>
     <main>
-        <section class="section-content">
-            <div class="flex-dimension">
-                <img src="/assents/pet-care-img.png" alt="Take care of your pets">
+      <section class="services">
+        <div class="services-dimension">
+          <img src="/assents/pet-care-img.png" alt="Take care of your pets">
+        </div>
+        <article class="services-dimension">
+          <span>Why pets parents love our services?</span>
+          <h2>Take care of your pet's needs, all in one place.</h2>
+          <p>
+            We also work to build relationships with local veterinarians. Because we often see dogs more than their vets do we are in excellent position to notice changes.
+          </p>
+          <div class="services--positive-points">
+            <!--ver a possibilidade de usar um forEach() com ejs-->
+            <div class="extra-info-box"> 
+              <p class="extra-information">
+                Personalized service with free consultations
+              </p>
             </div>
-            <article class="flex-dimension about-description">
-                <span>Why pets parents love our services?</span>
-                <h1>Take care of your pet's needs, all in one place.</h1>
-                <p class="extra-information">
-                    We also work to build relationships with local veterinarians. Because we often see dogs more than their vets do we are in excellent position to notice changes.
-                </p>
-                <div class="positive-points">
-                    <!--ver a possibilidade de usar um forEach()-->
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            Personalized service with free consultations
-                        </p>
-                    </div>
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            100% satisfaction guarantee
-                        </p>
-                    </div>
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            Safety always comes in first place
-                        </p>
-                    </div>
-                    <div class="extra-info-box"> 
-                        <p class="extra-information">
-                            Convenient and affortable
-                        </p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section class="service-list">
-            <div class="description-elements">
-                <span>Grooming salon menu</span>
-                <h2>We offer a full range of services</h2>
-                <p class="description">
-                    Book an appointment Monday-Thursday for special discounted pricing!
-                    We offer complete bath, haircut & walk-in grooming services.
-                </p>
+            <div class="extra-info-box"> 
+              <p class="extra-information">
+                100% satisfaction guarantee
+              </p>
             </div>
-            
-            <div class="services-description">
-                <!--ver a possibilidade de usar um forEach()-->
-                <ul class="service-list-items">
-                    <li class="list-services-description">
-                        <h3>Bath & full haircut</h3>
-                        <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
-                        <span>Service include:</span>
-                        <ul class="service-description">
-                            <li>
-                                Oxygen-infused bath with shampoo, & blow dry
-                            </li>
-                            <li>
-                                15-minutes brushing
-                            </li>
-                            <li>
-                                Haircut & light dematting
-                            </li>
-                            <li>
-                                Nail trim
-                            </li>
-                            <li>
-                                Ear cleaning, hair removal & flushing
-                            </li>
-                            <li>
-                                Scissoring feet & pad shaving
-                            </li>
-                            <li>
-                                Sanitary trim
-                            </li>
-                            <li>            
-                                Anal gland cleaning
-                            </li>
-                        </ul>
-                        <button class="book-now">Book now</button>
-                    </li>
-                    <li class="list-services-description">
-                        <h3>Bath & Grooming</h3>
-                        <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
-                        <span>Service include:</span>
-                        <ul class="service-description">
-                            <li>
-                                Oxygen-infused bath with shampoo, & blow dry
-                            </li>
-                            <li>
-                                Sanitary trim
-                            </li>
-                            <li>
-                                Haircut & light dematting
-                            </li>
-                            <li>
-                                Nail trim
-                            </li>
-                            <li>
-                                Ear cleaning, hair removal & flushing
-                            </li>
-                            <li>
-                                FURminator low-shed shampoo
-                            </li>
-                            <li>
-                                Up to 20 minutes of brushing
-                            </li>
-                            <li>
-                                Anal gland cleaning
-                            </li>
-                        </ul>
-                        <button class="book-now">Book now</button>
-                    </li>
-                    <li class="list-services-description">
-                        <h3>Skin & itch solution</h3>
-                        <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
-                        <span>Service include:</span>
-                        <ul class="service-description">
-                            <li>
-                                Tea tree & aloe shampoo upgrade
-                            </li>
-                            <li>
-                                Aloe oat-bath medicated shampoo upgrade
-                            </li>
-                            <li>
-                                Flea shampoo* upgrade
-                            </li>
-                            <li>
-                                Flea & tick topical
-                            </li>
-                            <li>
-                                Haircut & light dematting
-                            </li>
-                            <li>
-                                Nail trim
-                            </li>
-                            <li>
-                                15-minute brushing
-                            </li>
-                            <li>
-                                Sanitary trim
-                            </li>
-                        </ul>
-                        <button class="book-now">Book now</button>
-                    </li>
-                </ul>
+            <div class="extra-info-box"> 
+              <p class="extra-information">
+                Safety always comes in first place
+              </p>
             </div>
-        </section>
+            <div class="extra-info-box"> 
+              <p class="extra-information">
+                Convenient and affortable
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="service-list">  
+        <div class="description-elements">
+            <span>Grooming salon menu</span>
+            <h2>We offer a full range of services</h2>
+            <p class="description">
+                Book an appointment Monday-Thursday for special discounted pricing!
+                We offer complete bath, haircut & walk-in grooming services.
+            </p>
+        </div>
+        
+        <div class="services-description">
+          <ul class="service-list-items" id="render-services">
+              <!--<li class="list-services-description">
+                  <h3>Bath & full haircut</h3>
+                  <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
+                  <span>Service include:</span>
+                  <ul class="service-description">
+                      <li>
+                          Oxygen-infused bath with shampoo, & blow dry
+                      </li>
+                      <li>
+                          15-minutes brushing
+                      </li>
+                      <li>
+                          Haircut & light dematting
+                      </li>
+                      <li>
+                          Nail trim
+                      </li>
+                      <li>
+                          Ear cleaning, hair removal & flushing
+                      </li>
+                      <li>
+                          Scissoring feet & pad shaving
+                      </li>
+                      <li>
+                          Sanitary trim
+                      </li>
+                      <li>            
+                          Anal gland cleaning
+                      </li>
+                  </ul>
+                  <button class="book-now">Book now</button>
+              </li>
+              <li class="list-services-description">
+                  <h3>Bath & Grooming</h3>
+                  <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
+                  <span>Service include:</span>
+                  <ul class="service-description">
+                      <li>
+                          Oxygen-infused bath with shampoo, & blow dry
+                      </li>
+                      <li>
+                          Sanitary trim
+                      </li>
+                      <li>
+                          Haircut & light dematting
+                      </li>
+                      <li>
+                          Nail trim
+                      </li>
+                      <li>
+                          Ear cleaning, hair removal & flushing
+                      </li>
+                      <li>
+                          FURminator low-shed shampoo
+                      </li>
+                      <li>
+                          Up to 20 minutes of brushing
+                      </li>
+                      <li>
+                          Anal gland cleaning
+                      </li>
+                  </ul>
+                  <button class="book-now">Book now</button>
+              </li>
+              <li class="list-services-description">
+                  <h3>Skin & itch solution</h3>
+                  <p class="description">For pets like seniors and puppies who need a bath & haircut</p>
+                  <span>Service include:</span>
+                  <ul class="service-description">
+                      <li>
+                          Tea tree & aloe shampoo upgrade
+                      </li>
+                      <li>
+                          Aloe oat-bath medicated shampoo upgrade
+                      </li>
+                      <li>
+                          Flea shampoo* upgrade
+                      </li>
+                      <li>
+                          Flea & tick topical
+                      </li>
+                      <li>
+                          Haircut & light dematting
+                      </li>
+                      <li>
+                          Nail trim
+                      </li>
+                      <li>
+                          15-minute brushing
+                      </li>
+                      <li>
+                          Sanitary trim
+                      </li>
+                  </ul>
+                  <button class="book-now">Book now</button>
+              </li>-->
+          </ul>
+        </div>
+      </section>
     </main>
 
     <%- include('partials/footer.ejs')%>
-</body>
+    <%- include('partials/foot.ejs') %>
+  </body>
 </html>

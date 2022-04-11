@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
-    <%- include('partials/head.ejs') %>
+  <%- include('partials/head.ejs') %>
 
-    <body>
-        <%- include('partials/header.ejs') %>
-        <main class="container">
-            <section class="section-content">
-                <div class=" flex-dimension">
-                    <img src="/assents/about-photo.jpg" alt="about-me picture">
-                </div>
-                <div class="flex-dimension about-description">
-                    <span>Professional care for your pet</span>
-                    <h1>Enjoy the best grooming styles for your dog.</h1>
-                    <p class="extra-information">
-                        Making dogs & cats look great is our passion! Our academy-trained pet stylists have over 800 hours of hands-on grooming instruction that includes bathing, trimming & styling at least 200 pets.
-                        <br><br>
-                        We offer: – complete bath, haircut & walk-in grooming services; – walk-in services include nail trim, nail grind, PAWdicure; – teeth brushing, ear cleaning services, trimming, dematting & more. Book your pet’s salon appointment today!
-                    </p>
-                    <button id="testebtn" class="book-now">Book Now</button>
-                    <div class="teste">
-                        <%- include('partials/form.ejs') %>
-                    </div>
-                </div>
-            </section>
-        </main>
-        
-        <%- include('partials/footer.ejs') %>
+  <body>
+    <%- include('partials/header.ejs') %>
+    <main class="container">
+      <section class="about">
+        <div class=" about-dimension">
+          <img src="/assents/about-photo.jpg" alt="about-me picture">
+        </div>
+        <div class="about-dimension about-description">
+          <span>Professional care for your pet</span>
+          <h2>Enjoy the best grooming styles for your dog.</h2>
+          <p>
+            Making dogs & cats look great is our passion! Our academy-trained pet stylists have over 800 hours of hands-on grooming instruction that includes bathing, trimming & styling at least 200 pets.
+            <br><br>
+            We offer: – complete bath, haircut & walk-in grooming services; – walk-in services include nail trim, nail grind, PAWdicure; – teeth brushing, ear cleaning services, trimming, dematting & more. Book your pet’s salon appointment today!
+          </p>
+          <button id="btn-book" class="book-now">Book Now</button>
+          <div class="book-form">
+            <%- include('partials/form.ejs') %>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <%- include('partials/footer.ejs') %>
 
-        <%- include('partials/foot.ejs') %>
-    </body>
+    <%- include('partials/foot.ejs') %>
+  </body>
 </html>
