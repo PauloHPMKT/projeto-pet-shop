@@ -14,13 +14,19 @@ router.get('/sobre', (req, res) => {
 
 router.get('/services', (req, res) => {
     res.render('services', {
-        title: 'Services - PetShop'
+        title: 'Services - PetShop',
     })
 })
 
 router.get('/gallery',(req, res) => {
     res.render('gallery', {
         title: 'Gallery - PetShop'
+    })
+})
+
+router.get('/contact', (req, res) => {
+    res.render('contact', {
+        title: 'Contacts - PetShop'
     })
 })
 
