@@ -498,9 +498,9 @@ p {
   width: 33.3%;
   border: 1px solid #ffffff;
   border-radius: 10px;
+  transition: 0.4s ease;
 }
 .service-list-items .list-services-description:hover {
-  border: none;
   box-shadow: 0 0 25px #ea7471;
   transition: all 350ms ease;
 }

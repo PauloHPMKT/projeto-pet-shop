@@ -80,9 +80,9 @@
         width: 33.3%;
         border: 1px solid #ffffff;
         border-radius: 10px;
+        transition: .4s ease;
 
         &:hover {
-            border: none;
             box-shadow: 0 0 25px $main-color;
             transition: $transition-mood;
         }
