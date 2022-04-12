@@ -1,4 +1,4 @@
-const renderList = [
+const serviceList = [
   {
     title: 'Bath & Full haircut',
     description: 'For pets like seniors and puppies who need a bath & haircut',
@@ -41,23 +41,34 @@ const renderList = [
       'Anal gland cleaning',
     ]
   },
-
 ]
 
-const renderServices = document.querySelector('#render-services')
 
-renderList.map(lista => {
-  renderServices.innerHTML += `
-    <li class="list-services-description">
-      <h3>${lista.title}</h3>
-      <p class="description">${lista.description}</p>
-      <span>Service include:</span>
-      <ul class="service-description">
-        <li>
-          testar renderização
-        </li>
-      </ul>
-      <button class="book-now">Book now</button>
-    </li>
+let renderList = ''
+
+for(let service of serviceList) {
+
+  let listServices = ''
+
+  for(let item of service.list) {
+    listServices += `<li>${item}</li>`
+  }
+  
+  renderList += `
+  <li class="list-services-description">
+    <h3>${service.title}</h3>
+    <p class="description">${service.description}</p>
+    <span>Service include:</span>
+    <ul class="service-description">
+      ${listServices}
+    </ul>
+    <button class="book-now">Book now</button>
+  </li>
   `
-})
+}
+
+document.querySelector('#render-services').innerHTML = renderList
+
+
+
+
