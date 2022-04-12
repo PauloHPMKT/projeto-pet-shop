@@ -4,5 +4,9 @@
     span {
         @include subTitle;
     }
+
+    .contact-display {
+        display: flex;
+    }
 }
 

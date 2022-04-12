@@ -531,6 +531,9 @@ p {
   margin-bottom: 21px;
   color: #ea7471;
 }
+.contacts .contact-display {
+  display: flex;
+}
 
 .gallery-content {
   text-align: center;
