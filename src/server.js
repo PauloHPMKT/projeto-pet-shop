@@ -30,4 +30,4 @@ app.use((req, res) => {
 
 //open server
 const port = process.env.port || 8085
-app.listen(port, () => console.log(`Server is running at http://localhot:${port}`))
+app.listen(port, () => console.log(`Server is running at http://localhost:${port}`))
