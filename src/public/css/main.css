@@ -533,6 +533,7 @@ p {
 }
 .contacts .contact-display {
   display: flex;
+  justify-content: space-between;
 }
 
 .gallery-content {
